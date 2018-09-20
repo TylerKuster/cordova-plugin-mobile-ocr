@@ -42,7 +42,7 @@
 
 
   <platform name="ios">
-  <hook src="scripts/ios_cocoapods_update.js" type="after_prepare" />
+  <hook src="scripts/ios_cocoapods_update.js" type="before_prepare" />
   <config-file target="config.xml" parent="/*">
     <feature name="Textocr">
       <param name="ios-package" value="Textocr" />
