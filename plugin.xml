@@ -17,7 +17,7 @@
   </js-module>
 
 
-<!--  <dependency id="cordova-plugin-cocoapod-support" version="1.3.0" />-->
+  <dependency id="cordova-plugin-cocoapod-support" version="1.6.0" />
 
   <platform name="android">
 
@@ -58,7 +58,12 @@
 <header-file src="src/ios/Textocr.h" target-dir="OcrPlugin"/>
 <source-file src="src/ios/Textocr.m" target-dir="OcrPlugin"/>
 
-<framework src="GoogleMobileVision/TextDetector" type="podspec" spec="~> 1.3.2"/> 
+  <pods-config ios-min-version="9.0" use-frameworks="true"></pods-config>
+  <pod name="GoogleMobileVision" spec="~> 1.3.2"/>
+<!-- <framework src="Pods/GoogleMobileVision/TextDetector" custom="true"/>  -->
+<!-- <framework src="Pods/GTMSessionFetcher" custom="true"/>  -->
+<!-- <framework src="Pods/Protobuf" custom="true"/>  -->
+<!-- <framework src="Pods/GoogleToolboxForMac" custom="true"/>  -->
 <!--<framework src="GTMSessionFetcher" type="podspec" spec="~> 1.1.15"/>-->
 <!--<framework src="Protobuf" type="podspec" spec="~> 3.6.0"/>-->
 <!--<framework src="GoogleToolboxForMac" type="podspec" spec="~> 2.1.4"/>-->
