@@ -4,4 +4,4 @@ var shell = require('shelljs')
 
 shell.exec('pod install')
 shell.exec('pod update')
-shell.echo('*** Updated Pods A ***');
+shell.echo('*** Updated Pods E ***');
