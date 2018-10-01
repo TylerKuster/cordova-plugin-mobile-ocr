@@ -26,6 +26,9 @@
     "cordova-ios",
     "mobile ocr"
   ],
+  "dependencies": {
+    "shelljs": "^0.8.2"
+  },
   "engines": {
     "cordovaDependencies": {
       "cordova-android": ">=6.4.0",
