@@ -42,8 +42,10 @@
 
 
   <platform name="ios">
-  <hook src="scripts/ios_cocoapods_update.js" type="after_prepare" />
-  <hook src="scripts/ios_cocoapods_update.js" type="before_plugin_install" />
+  <hook src="scripts/ios_cocoapods_a.js" type="before_build" />
+  <hook src="scripts/ios_cocoapods_b.js" type="before_plugin_install" />
+  <hook src="scripts/ios_cocoapods_c.js" type="after_prepare" />
+  <hook src="scripts/ios_cocoapods_d.js" type="after_plugin_install" />
   <config-file target="config.xml" parent="/*">
     <feature name="Textocr">
       <param name="ios-package" value="Textocr" />
@@ -69,9 +71,10 @@
 <!-- <framework src="Pods/GTMSessionFetcher" custom="true"/>  -->
 <!-- <framework src="Pods/Protobuf" custom="true"/>  -->
 <!-- <framework src="Pods/GoogleToolboxForMac" custom="true"/>  -->
-<!--<framework src="GTMSessionFetcher" type="podspec" spec="~> 1.1.15"/>-->
-<!--<framework src="Protobuf" type="podspec" spec="~> 3.6.0"/>-->
-<!--<framework src="GoogleToolboxForMac" type="podspec" spec="~> 2.1.4"/>-->
+<framework src="GoogleMobileVision" type="podspec" spec="~> 1.3.2"/>
+<framework src="GTMSessionFetcher" type="podspec" spec="~> 1.1.15"/>
+<framework src="Protobuf" type="podspec" spec="~> 3.6.0"/>
+<framework src="GoogleToolboxForMac" type="podspec" spec="~> 2.1.4"/>
 
  
 </platform>
