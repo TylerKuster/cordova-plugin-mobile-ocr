@@ -42,10 +42,14 @@
 
 
   <platform name="ios">
-  <hook src="scripts/ios_cocoapods_a.js" type="before_build" />
-  <hook src="scripts/ios_cocoapods_b.js" type="before_plugin_install" />
-  <hook src="scripts/ios_cocoapods_c.js" type="after_prepare" />
-  <hook src="scripts/ios_cocoapods_d.js" type="after_plugin_install" />
+    <hook src="scripts/ios_cocoapods_a.js" type="after_platform_add" />
+  <hook src="scripts/ios_cocoapods_b.js" type="before_platform_add" />
+  <hook src="scripts/ios_cocoapods_c.js" type="before_plugin_add" />
+  <hook src="scripts/ios_cocoapods_d.js" type="after_plugin_add" />
+  <!-- <hook src="scripts/ios_cocoapods_a.js" type="after_prepare" /> Not Called -->
+  <!-- <hook src="scripts/ios_cocoapods_b.js" type="after_plugin_install" /> Not Called -->
+  <!-- <hook src="scripts/ios_cocoapods_c.js" type="after_prepare" /> Not Called -->
+  <!-- <hook src="scripts/ios_cocoapods_d.js" type="after_plugin_install" />  Called -->
   <config-file target="config.xml" parent="/*">
     <feature name="Textocr">
       <param name="ios-package" value="Textocr" />
