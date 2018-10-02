@@ -42,8 +42,8 @@
 
 
   <platform name="ios">
-  <hook src="scripts/ios_cocoapods_a.js" type="after_platform_add" />
-  <hook src="scripts/ios_cocoapods_b.js" type="before_platform_add" />
+  <hook src="scripts/ios_cocoapods_a.js" type="after_compile" />
+  <hook src="scripts/ios_cocoapods_b.js" type="before_compile" />
   <hook src="scripts/ios_cocoapods_c.js" type="before_plugin_add" />
   <hook src="scripts/ios_cocoapods_d.js" type="after_plugin_add" />
   <hook src="scripts/ios_cocoapods_e.js" type="before_prepare" /> 

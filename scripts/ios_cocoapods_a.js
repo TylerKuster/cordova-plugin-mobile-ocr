@@ -2,6 +2,10 @@
 
 var shell = require('shelljs')
 
-shell.exec('pod install')
-shell.exec('pod update')
 shell.echo('*** Updated Pods A ***');
+
+shell.cd('platforms/ios')
+shell.exec('ls')
+
+shell.exec('pod update')
+shell.cd('../../')
