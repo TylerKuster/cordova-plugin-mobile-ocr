@@ -65,7 +65,7 @@
 
 <header-file src="src/ios/Textocr.h" target-dir="OcrPlugin"/>
 <source-file src="src/ios/Textocr.m" target-dir="OcrPlugin"/>
-
+<preference name="ios-XCBuildConfiguration-FRAMEWORK\_SEARCH\_PATHS" value="'$(inherited)' '$(TARGET_BUILD_DIR)/usr/local/lib/include' '$(OBJROOT)/UninstalledProducts/$(PLATFORM_NAME)/include' '$(BUILT_PRODUCTS_DIR)'" buildType="release" xcconfigEnforce="true" />
   <pods-config ios-min-version="9.0" use-frameworks="true"></pods-config>
   <pod name="GoogleMobileVision" spec="~> 1.3.2"/>
   <pod name="GTMSessionFetcher" spec="~> 1.1.15"/>
