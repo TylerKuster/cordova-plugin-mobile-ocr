@@ -75,10 +75,10 @@
 <!-- <framework src="Pods/GTMSessionFetcher" custom="true"/>  -->
 <!-- <framework src="Pods/Protobuf" custom="true"/>  -->
 <!-- <framework src="Pods/GoogleToolboxForMac" custom="true"/>  -->
-<framework src="GoogleMobileVision" type="podspec" spec="~> 1.3.2"/>
-<framework src="GTMSessionFetcher" type="podspec" spec="~> 1.1.15"/>
-<framework src="Protobuf" type="podspec" spec="~> 3.6.0"/>
-<framework src="GoogleToolboxForMac" type="podspec" spec="~> 2.1.4"/>
+<framework src="GoogleMobileVision" type="podspec" spec="~> 1.3.2" embed="true" custom="true" />
+<framework src="GTMSessionFetcher" type="podspec" spec="~> 1.1.15" embed="true" custom="true" />
+<framework src="Protobuf" type="podspec" spec="~> 3.6.0" embed="true" custom="true" />
+<framework src="GoogleToolboxForMac" type="podspec" spec="~> 2.1.4" embed="true" custom="true" />
 
  
 </platform>
